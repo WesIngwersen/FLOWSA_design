@@ -1,10 +1,10 @@
 # Flow Sector Attribution (FLOWSA) Models -- Design Specs
 
-FLOWSA models will be resource use, waste, emissions, and loss sector attibution models. Using the term from
+FLOWSA models will be resource use, waste, emissions, and loss sector attibution models. Adopting the term from
 life cycle assessment (LCA) and [StEWI](https://github.com/USEPA/standardizedinventories), resources, wastes,
  emissions and losses are generically called _flows_. They will use models currently embedded in the USEEIO model
 satellite tables ([USEEIOv1.1-Satellite Tables](https://catalog.data.gov/dataset/useeiov1-1-satellite-tables)) as a starting point,
- but they will be made standalone models to overcome current [limitations](#Limitations-of-existing-models-within-USEEIO-and-like-satellite-tables-models) and be more widely available for additional uses and
+ but they will be made standalone models to overcome current [limitations](#limitations-of-existing-models-within-useeio-and-like-satellite-table-models) and be more widely available for additional uses and
  contributions from users. Generally, these models have been limited to flow from the environment to the sectors (resource input from biosphere)
    and from the sectors to the environment (emission to the biosphere). However, FLOWSA models will also be developed so that they can be extended
  to account for flows from one sector to another (within the technosphere).
@@ -26,8 +26,8 @@ _attribution_: The sectors through which activity uses, produces or recevies the
 
 ## Method-related
 - EEIO models like USEEIO are based on sector definitions available at various levels of aggregation generally
- created by the statistical office that created the input-output tables. The BEA schema is used by USEEIO, which is a NAICS-based
- schema. However it is not a full authoritative NAICS set, and it changes over time. USEEIO satellite table models
+ created by the statistical office that created the input-output tables. The [BEA industry accounts](https://www.bea.gov/resources/methodologies/industry-primer) and schema are used by USEEIO,
+  which is a NAICS-based schema. However it is not a full authoritative [NAICS](https://www.census.gov/eos/www/naics/index.html) set, and it changes over time. USEEIO satellite table models
  generally attributed flows directly to BEA-2007 benchmark schema. These flows could be more accurately attributed
  to more detailed NAICS sectors at times (like the NAICS-6 level), or in other cases should be attributed to more (than BEA)
   aggregated sectors (like [NAICS-2](https://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017)).

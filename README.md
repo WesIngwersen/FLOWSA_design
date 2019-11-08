@@ -49,6 +49,4 @@ _attribution_: The sectors through which activity uses, produces or recevies the
 
 - Automated use of the models is limited (to extraction or use of extracted data)
 
-
-
-
+- There can be overlap between flows across different models that must be handled, which was not easily identified or handled in these platforms.

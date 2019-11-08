@@ -1,2 +1,48 @@
-Provider,Source,USEEIO_Satellite
-USDA,AgCensus,Land
+Provider,Source,USEEIO_Satellite,InUSEEIO_Flowmapping,InMainPaper,InUSEEIOv1.1SatTable
+BEA,IOtables,Employment,,,1
+BLS,NationalEmploymentMatrix,Employment,1,,1
+EIA,MonthlyEnergyReview,Energy,,1,1
+BEA,GDPbyIndustry,Energy,,,1
+BEA,IOtables,Energy,,,1
+EIA,ElectricityDataBrowser,Energy,,,1
+EIA,CommercialBuildingEnergyConsumptionSurvey,Energy,,1,1
+EIA,MECS,Energy,,1,1
+EPA,GHGInventory,GHG,1,1,1
+EIA,MECS,GHG,,1,1
+USGS,MineralCommoditySurvey,GHG,,1,1
+USDA,AgCensus,GHG,,1,1
+USDA,QuickStats,GHG,,1,1
+BEA,IOtables,GHG,,1,1
+USDA,AgCensus,Land,1,1,
+EIA,CBECS,Land,1,1,
+USDA,Land,Land,1,1,1
+EIA,MECS,Land,1,1,1
+BLM,PublicLandStats,Land,1,1,1
+USGS,MineralCommoditySurvey,Minerals,,1,1
+BEA,GDPbyIndustry,Minerals,,,1
+EPA,NEI,NEI,1,1,1
+USDA,AgChemicalUse,NEI,,1,1
+EPA,DMR,NPloss,1,1,1
+EPA,GHGInventory,NPloss,,,1
+USDA,AgChemicalUse,NPloss,1,1,1
+USDA,NRCS,NPloss,,1,1
+Literature,Kim el al.,NPloss,,1,1
+USDA,AgChemicalUse,Pesticides,1,1,1
+Literature,Vineyard et al.,Pesticides,,1,1
+EPA,TRI,TRI,1,1,1
+BEA,IOtables,TRI,,,1
+CalRecycle,WasteCharacterizationStudy,Waste,1,,1
+EPA,CDDPath,Waste,1,,1
+EPA,RCRAInfo,Waste,1,,1
+USDA,FarmRanchIrrigationSurvey,Water,1,1,
+USGS,WaterUse,Water,1,,1
+USDA,AgCensus,Water,,,1
+Literature,Maupin et al. 2014,Water,,1,1
+Literature,Torcellini et al. 2003,Water,,1,
+Literature,"Macknick et al., 2011",Water,,1,1
+Literature,"Lovelace, 2009",Water,,1,1
+Literature,"Blackhurst et al., 2010",Water,,1,1
+Literature,Kenny et al. 2009,Water,,,1
+StatisticsCanada,Canadian Industrial Water Survey,Water,,1,
+BEA,GDPbyIndustry,Water,,,1
+BEA,IOtables,Water,,,1

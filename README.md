@@ -1,4 +1,4 @@
-# Flow Sector Attribution (FLOWSA) Models Design
+# Flow Sector Attribution (FLOWSA) Models -- Design Specs
 
 FLOWSA models will be resource use, waste, emissions, and loss sector attibution models. Using the term from
 life cycle assessment (LCA) and [StEWI](https://github.com/USEPA/standardizedinventories), resources, wastes,
@@ -22,22 +22,26 @@ tables, these can be either _industries_ or _commodities_.
 
 _attribution_: The sectors through which activity uses, produces or recevies the flows (input or output).
 
-# Limitations of existing models within USEEIO and like satellite tables models
+# Limitations of existing models within USEEIO and like satellite table models
 
 ## Method-related
 - EEIO models like USEEIO are based on sector definitions available at various levels of aggregation generally
- created by the statistical office that created the tables. The BEA schema is used by USEEIO, which is a NAICS-based
+ created by the statistical office that created the input-output tables. The BEA schema is used by USEEIO, which is a NAICS-based
  schema. However it is not a full authoritative NAICS set, and it changes over time. USEEIO satellite table models
  generally attributed flows directly to BEA-2007 benchmark schema. These flows could be more accurately attributed
  to more detailed NAICS sectors at times (like the NAICS-6 level), or in other cases should be attributed to more (than BEA)
-  aggregated sector categories (like [NAICS-2](https://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017)).
+  aggregated sectors (like [NAICS-2](https://www.census.gov/cgi-bin/sssd/naics/naicsrch?chart=2017)).
 
 - USEEIO satellite tables attributed all flows to _industries_, but at times a _commodity_ attribution could be more appropriate.
 
 - USEEIOv1.1 did not include households or other final-users.
 
+- The steps needed to create a standard satellite table for EEIO were embedded in the existing models. This implied they were duplicated in 10+ models.
+
 ## Platform-related
-- The Excel model platform has performance limitations and does not enable github-style collaboration
+- The Excel model platform has performance limitations with their large sizes (at times up to 100 GB)
+
+- They did not enable github-style collaboration
 
 - Input data (which are significant) are not pulled in a fully transparent/reproducible manner
 

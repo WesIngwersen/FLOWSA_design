@@ -42,7 +42,7 @@ _sectors_: generally these are economic sectors generating economic activity, bu
 here to include households and institutional end users. Using the BEA definitions in input-output
 tables, these can be either _industries_ or _commodities_.
 
-_attribution_: The sectors through which activity uses, produces or recevies the flows (input or output).
+_attribution_: The sectors through which activity uses, produces or receives the flows (input or output).
 
 # Limitations of existing models within USEEIO and like satellite table models
 

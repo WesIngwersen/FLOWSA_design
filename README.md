@@ -12,6 +12,28 @@ satellite tables ([USEEIOv1.1-Satellite Tables](https://catalog.data.gov/dataset
 The purpose of this repository is to provide common design specifications to guide the
 development of these models.
 
+# Flow Sector Attribution (FLOWSA) Models - List of Types of Flows to Track
+
+Flow types are listed along with classes from the
+[Federal LCA Commons Elementary Flow List](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/),
+ when appropriate.
+
+| Flow Type | FEDEFL Flow Class |
+| --- | --- |
+| Criteria air pollutants | Chemicals, Groups |
+| Greenhouse gases | Chemicals |
+| Toxic releases | Chemicals, Groups |
+| Pesticides | Chemicals |
+| Nutrient losses | Chemicals, Groups, Other |
+| Non-hazardous solid waste (e.g. MSW, CDD) | NA |
+| Hazardous solid waste | NA |
+| Water use | Water |
+| Energy use | Energy |
+| Mineral and metal use | Geological |
+| Biomass harvested | Biological |
+| Jobs | NA |
+| Other solid wastes | NA |
+
 # Terms
 _flows_: represent the physical movement of material or energy as input or output to or between activities.
 In LCA terms these are more strictly elementary flows or waste flows, although these LCA uses will not limit the scope of FLOWSA models.

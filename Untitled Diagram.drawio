@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-11-25T16:19:22.284Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="JfAT95OCVL3FcRSJtSoV" version="12.3.0" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-11-25T16:31:07.696Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36" etag="-Cci2btXODArziJ84haD" version="12.3.0" type="github" pages="1">
   <diagram id="HvXo7RwUKjI39qojTFpH" name="Page-1">
     <mxGraphModel dx="1089" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -76,7 +76,7 @@
         <mxCell id="D3Uim407w7zxOrBkIjUw-22" value="fedelemflowlist" style="rounded=0;whiteSpace=wrap;html=1;fontSize=11;" parent="1" vertex="1">
           <mxGeometry x="310" y="20" width="80" height="30" as="geometry"/>
         </mxCell>
-        <mxCell id="D3Uim407w7zxOrBkIjUw-27" value="technological data quality adjustments" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="D3Uim407w7zxOrBkIjUw-41" target="D3Uim407w7zxOrBkIjUw-19" edge="1">
+        <mxCell id="D3Uim407w7zxOrBkIjUw-27" value="technological, data collection, geographical data quality adjustments" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=0.5;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" parent="1" source="D3Uim407w7zxOrBkIjUw-41" target="D3Uim407w7zxOrBkIjUw-19" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="860" y="300"/>
@@ -91,7 +91,7 @@
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
         <mxCell id="D3Uim407w7zxOrBkIjUw-24" value="flow types" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fontSize=9;" parent="1" vertex="1">
-          <mxGeometry x="442.5" y="110" width="75" height="40" as="geometry"/>
+          <mxGeometry x="443" y="110" width="48" height="30" as="geometry"/>
         </mxCell>
         <mxCell id="D3Uim407w7zxOrBkIjUw-36" value="FIPS&lt;br&gt;&amp;nbsp;urban areas,&lt;br&gt;establishments" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;" parent="1" source="D3Uim407w7zxOrBkIjUw-34" edge="1">
           <mxGeometry relative="1" as="geometry">
@@ -193,13 +193,11 @@
           <mxGeometry x="67" y="456" width="50" height="40" as="geometry"/>
         </mxCell>
         <mxCell id="D3Uim407w7zxOrBkIjUw-78" value="flowmapping" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=11;exitX=0.75;exitY=0;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;entryX=0.598;entryY=1.008;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="D3Uim407w7zxOrBkIjUw-47" target="D3Uim407w7zxOrBkIjUw-19" edge="1">
-          <mxGeometry x="0.005" relative="1" as="geometry">
+          <mxGeometry x="-0.0136" y="4" relative="1" as="geometry">
             <mxPoint x="730" y="320" as="sourcePoint"/>
             <mxPoint x="360" y="210" as="targetPoint"/>
             <Array as="points">
-              <mxPoint x="618" y="280"/>
-              <mxPoint x="640" y="280"/>
-              <mxPoint x="640" y="216"/>
+              <mxPoint x="618" y="216"/>
               <mxPoint x="358" y="216"/>
             </Array>
             <mxPoint as="offset"/>

@@ -14,9 +14,12 @@ enable easy github install
 - Look to connect to or build off other open source code 
 - Use common functions for data reshaping whenever possible
 - Unit tests like [fedelemflowlist](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List)
+- Use [PEP 8](https://www.python.org/dev/peps/pep-0008/) as style guide 
+- Comply with EPA LMMD SOPs 
 
 ## Potential resources
 [census](https://github.com/datamade/census), a python wrapper for Census API
+
 [usfertilizer](https://cran.r-project.org/web/packages/usfertilizer/index.html), Compiled and cleaned the county-level estimates of fertilizer, nitrogen and phosphorus from USGS
  
 

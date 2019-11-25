@@ -1,4 +1,4 @@
-# Flow Sector Attribution (FLOWSA) Models -- Design Specs
+# Flow Sector Attribution (FLOWSA) Models -- Design
 
 FLOWSA models will be resource use, waste, emissions, and loss sector attibution models. Adopting the term from
 life cycle assessment (LCA) and [StEWI](https://github.com/USEPA/standardizedinventories), resources, wastes,
@@ -7,16 +7,16 @@ satellite tables ([USEEIOv1.1-Satellite Tables](https://catalog.data.gov/dataset
  but they will be made standalone models to overcome current [limitations](#limitations-of-existing-models-within-useeio-and-like-satellite-table-models) and be more widely available for additional uses and
  contributions from users. Generally, these models have been limited to flow from the environment to the sectors (resource input from biosphere)
    and from the sectors to the environment (emission to the biosphere). However, FLOWSA models will also be developed so that they can be extended
- to account for flows from one sector to another (within the technosphere).
-
+ to account for flows from one sector to another (within the technosphere), and will be available for broader purpose use.
+ 
 The purpose of this repository is to provide common design specifications to guide the
-development of these models.
+development of these models. See the proposed [functional and technical requirements](DesignRequirements.md). 
 
 # Flow Sector Attribution (FLOWSA) Models - List of Types of Flows to Track
 
 Flow types are listed along with classes from the
 [Federal LCA Commons Elementary Flow List](https://github.com/USEPA/Federal-LCA-Commons-Elementary-Flow-List/),
- when appropriate.
+ when appropriate (only for elementary flows)
 
 | Flow Type | FEDEFL Flow Class |
 | --- | --- |
@@ -29,10 +29,13 @@ Flow types are listed along with classes from the
 | Hazardous solid waste | NA |
 | Water use | Water |
 | Energy use | Energy |
+| Land use | Land |
 | Mineral and metal use | Geological |
 | Biomass harvested | Biological |
 | Jobs | NA |
 | Other solid wastes | NA |
+
+They will also track non-elementary flows including wastes and technosphere flows as needed.
 
 # Terms
 _flows_: represent the physical movement of material or energy as input or output to or between activities.

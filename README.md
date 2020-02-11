@@ -2,12 +2,13 @@
 
 FLOWSA models will be resource use, waste, emissions, and loss sector attibution models. Adopting the term from
 life cycle assessment (LCA) and [StEWI](https://github.com/USEPA/standardizedinventories), resources, wastes,
- emissions and losses are generically called _flows_. They will use models currently embedded in the USEEIO model
+emissions and losses are generically called _flows_. They will use models currently embedded in the USEEIO model
 satellite tables ([USEEIOv1.1-Satellite Tables](https://catalog.data.gov/dataset/useeiov1-1-satellite-tables)) as a starting point,
- but they will be made standalone models to overcome current [limitations](#limitations-of-existing-models-within-useeio-and-like-satellite-table-models) and be more widely available for additional uses and
- contributions from users. Generally, these models have been limited to flow from the environment to the sectors (resource input from biosphere)
-   and from the sectors to the environment (emission to the biosphere). However, FLOWSA models will also be developed so that they can be extended
- to account for flows from one sector to another (within the technosphere), and will be available for broader purpose use.
+but they will be made standalone models to overcome current [limitations](#limitations-of-existing-models-within-useeio-and-like-satellite-table-models)
+and be more widely available for additional uses and
+contributions from users. Generally, these models have been limited to flow from the environment to the sectors (resource input from biosphere)
+and from the sectors to the environment (emission to the biosphere). However, FLOWSA models will also be developed so that they can be extended
+to account for flows from one sector to another (within the technosphere), and will be available for broader purpose use.
  
 The purpose of this repository is to provide common design specifications to guide the
 development of these models. See the proposed [functional and technical requirements](DesignRequirements.md). 

@@ -17,6 +17,7 @@ The steps for applying the method are defined as follows:
 4. Add the sectors to fba datasets using the activity-to-sector crosswalks.
 5. If the sectors are not the same as those defined for the target output, convert the sectors using a sector crosswalk.
 6. Temporarily merge the applicable flows of the given class with the allocation flows based on sectors, and apply the specified allocation method by allocating flow amounts to sectors based on values in the allocation datasets.
+7. Adjust data quality scores and uncertainty ranges along with allocation.
 
 ### Flow Checks
 

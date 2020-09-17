@@ -3,6 +3,6 @@
 - Immediate updates
 - Transparent data and methods
 - Reproducible
-- Convenient to update source data
+- Convenient
 - Users can create own methods
 - Covers various material, energy, monetary and other classes of flows

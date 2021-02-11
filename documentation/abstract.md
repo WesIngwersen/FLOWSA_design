@@ -1,0 +1,5 @@
+# Title
+FLOWSA: A python package attributing resource use, waste, emissions, and loss flows to NAICS
+
+# Abstract
+FLOWSA is a python package that generates standardized resource use, waste, emissions, and loss datasets at the 6-digit North American Industrial Classification (NAICS) level, using publicy available data. Models can be developed to capture flows from the environment to NAICS sectors, from NAICS sectors to the environment, and from one NAICS sector to another. FLOWSA allows for the flexible develpment of models, enabling comparision of methodological, geographical, and temporal variation on NAICS sector attribution. This communication demonstrates FLOWSA's capability by describing models for water, land, and employment with varying methodologies. FLOWSA is publicly available on GitHub. 

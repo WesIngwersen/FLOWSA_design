@@ -11,7 +11,7 @@ FLOWSA is a python package that attributes resources, wastes, emissions, losses,
 
 # Introduction
 
-## Scientific contribution statement
+### Scientific contribution statement
 FLOWSA is a transparent and open-source environment that is convenient and easy to use. Creates standardized totals by sector outputs...
 
 

@@ -6,6 +6,6 @@
 
 ***sector attribution** Assigning flows to sectors through which activity uses, produces or receives the flows (input or output).
 
-:::
+::: notes
 In LCA terms these are more strictly elementary flows or waste flows, although these LCA uses will not limit the scope of FLOWSA models.
 :::

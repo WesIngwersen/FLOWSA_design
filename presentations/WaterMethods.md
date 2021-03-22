@@ -1,5 +1,5 @@
-# Method 1 relies on publicly available US data
+# Water attribution model - method 1
 ![](../../water_use_methods/images/water_methodology_flow_m1.tif)
 
-# Method 2 incorporates values from the literature and Canadian water use
+# Water attribution model - method 2
 ![](../../water_use_methods/images/water_methodology_flow_m2.tif)

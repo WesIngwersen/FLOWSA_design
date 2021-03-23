@@ -1,4 +1,5 @@
-# FLOWSA is a python package enabling flow sector attribution
+# FLOWSA
+Python package enabling flow sector attribution
 - [Publicly available (github)](https://github.com/USEPA/flowsa)
 - Immediate updates
 - Transparent data and methods

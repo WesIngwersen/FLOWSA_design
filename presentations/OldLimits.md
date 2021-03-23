@@ -1,7 +1,7 @@
 # Limitations
 
 ## Modeling 
-- BEA detail sectors? 
+- BEA detail sectors
 - Updating
 - Reusing attribution/allocation approaches
 

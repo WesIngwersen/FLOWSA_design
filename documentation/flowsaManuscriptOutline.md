@@ -43,7 +43,13 @@ The Federal LCA Commons Elementary Flow List, fedefl, a Python package, which cr
   
 ### ESUPY
 
-### stewi
+### Standardized Emission and Waste Inventories (StEWI)
+The Standardized Emission and Waste Inventories (StEWI) is a series of four python packages which process emission and waste generation inventory data for U.S. facilities in standard formats for life cycle assessment (Citation).
+The _stewi_ module parses publicly reported data from EPA datasets including the Toxic Release Inventory (TRI), National Emissions Inventory (NEI), Discharge Monitoring Reports (DMR), Resource and Conservation Recovery Act Bienneial Hazardous Waste Reports (RCRAInfo), and others, into standard Pandas dataframes.
+Two additional modules, _facilitymatcher_ and _chemicalmatcher_, support the alignment of facility identifiers and chemical flow names across datasets. These modules ensure that flow data reported across multiple inventories are aligned with the same point source facility and conform to standardized flow nomenclature.
+Data from these three modules are then compiled in _stewicombo_ to generate combined inventories by facility.
+Inventories developed in both _stewi_ and _stewicombo_ are accessible in FLOWSA for use in generating FlowBySector datasets. Data are reformatted and aggregated and assigned to NAICS based on those reported in the _facilitymatcher_. Additional processing can be applied as needed to further process the data from StEWI, for example to limit the scope of the FBS.
+
 
 ## Specific Model Methodology
 

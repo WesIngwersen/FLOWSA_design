@@ -8,6 +8,7 @@ Catherine Birney (Office of Research and Development, Center for Environmental S
 FLOWSA is a python package that attributes resources, wastes, emissions, losses, and other movements of mass, energy, monetary or human resources – collectively called flows – to industries. Models can be developed to capture flows to and from the environment and industries, as well as transfers between industry sectors. Data on flow generation and use by activity are imported transparently from providers and modified to a standardized format, but are otherwise numerically unchanged in preparation for modeling. Multiple datasets are often used to drive an industry attribution model, along with crosswalks assigning reported activities to sectors. Users can develop flow totals by sector models by applying user specified rules to the activity flows data inputs. Modification to methodological, geographical, and temporal parameters will produce varying totals by sector model results, enabling comparison of the impact of user rules on sector attribution. The standardized data outputs from these models have been used as environmental data inputs into the latest version of the USEEIO model, a life cycle model of US goods and services in ~400 categories. This communication demonstrates FLOWSA’s capability by describing models for US industry use of water, land, and employment with varying methodologies. FLOWSA is publicly available on GitHub and many of the data outputs are available on the EPA Data Commons.
 
 # Keywords
+Life-cycle assessment, Environmental impact
 
 # Introduction
 
@@ -17,23 +18,43 @@ FLOWSA is a transparent and open-source environment that is convenient and easy 
 
 # Material and methods
 
-## Description of General Approach
+Flowsa is written in Python.
+The program generates two types of outputs, Flow-By-Activity and Flow-By-Sector.
+FBA model components: Crosswalk
+Flowsa requires a number of pre-defined, existing packages available through the open-source nature of python.
+Flowsa relies on additional packages in the LCA tool ecosystem.
+Flowsa requires user generated inputs, as defined in method yamls. Users will create their own crosswalks.
+To demonstrate the flexibility of python, this manuscript will cover XX examples of generating Flow-By-Sector datasets. 
+
 Flowsa attributes resource use, waste, emissions, and loss to North American Industrial Classification codes (NAICS). It produces standard tabular formats with sector attributions out of numerous data sources. Flowsa is publicly availble on github, enabling users access to the most up-to-date data. The data sources used to build the models discussed in this manuscript are available in the repository.
   - Flexible
   - Updateable
   - Method yamls with methodology instructions written by user
 
-### FlowByAcitivity
+## Software and Availability
+Flowsa is written in the Python programming language and is publicly-available on github. Python was chosen as it is freely available on all platforms and is used widely throughout the literature (cite examples). The benefits of using Python are that the code is easily updateable, easy to modify.
+
+## Model Outputs
+Flowsa generates two types of outputs:
+1. Flow-By-Activity datasets: Import environmental (and other types of) data from publicly available datasets, formatting the data into a standardized table, a FlowByActivity dataset. FlowByActivity datasets are largely unchanged from the original data source, with the exception of formatting.
+2. Flow-By-Sector datasets: Attribute resource use, waste, emissions, and loss to industries, in the form of 6-digit North American Industrial Classification (NAICS) Codes, formatting the data into a standardized FlowBySector table. These new datasets are generally created using multiple FlowByActivity datasets. 
+
+### Generating Flow-By-Activity Datasets
   - Imports data, with the exception of formatting, unmodified
   - formats to standardized output
   - flowbyactivity.py houses generalized functions for calling and parsing data
   - dataset specific functions maintained in seperate script
+ Write "instructions" for how to find the original data source being imported (i.e. a webpage). Write out the instructions in a yaml file in the flowbyactivitymethods folder. Write any functions needed to help pull, parse, and format the data in a single script with the same SourceName as that used in the flowbyactivitymethods yaml. Any functions written in this script should be called on in the method yaml. Generate the Flow-By-Activity datset by running flowbyactivity.py. This file houses the script that calls on the information in the flowbyactivitymethods yaml and the functions specific to a data source. Update the source catalog yaml with the information specific to the dataset.
 
-### FlowBySector
+### Generating Flow-By-Sector Datasets
+Write "instructions" for how to attribute environmental data in the Flow-By-Activity datasets to North American Industrial Classification (NAICS) Codes. Write out the instructions in a yaml file in the flowbysectormethods folder. Data in a Flow-By-Activity dataset are converted to NAICS based on the values in the 'FlowName' column. There are two options for identifying which 'FlowNames' to allocate in an activity set in the method yaml. The first method is to manually list out the FlowNames in the flowbysectormethods yaml. The second option is to create a csv with FlowNames and the activity set they belong to, saving the csv in the flowbysectoractivitysets folder.Add any functions required to help allocate a Flow-By-Activity dataset to NAICS in the same py file used to generate the Flow-By-Activity. These functions are optional, dependent on the data source. Generate the Flow-By-Sector dataset by running flowbyfunctions.py, the script that calls on the information and functions specified in the flowbysectormethods yaml.
+
+### User defined components
 
 ### Data Storage
   - local repository
   - remote repository
+
 
 ## Integration with other EPA tools
 Flowsa is part of a larger family of tools. This flow diagram (insert...) depicts how the tools, which are written in a mix of languages. All code is available on github and together, work to output the industry results.
